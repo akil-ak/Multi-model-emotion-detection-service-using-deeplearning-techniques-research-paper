@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "line", "color": "orange", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Angry"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Angry"}}}, {"mark": {"type": "line", "color": "red", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Disgust"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Disgust"}}}, {"mark": {"type": "line", "color": "green", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Fear"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Fear"}}}, {"mark": {"type": "line", "color": "blue", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Happy"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Happy"}}}, {"mark": {"type": "line", "color": "black", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Sad"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Sad"}}}, {"mark": {"type": "line", "color": "pink", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Surprise"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Surprise"}}}, {"mark": {"type": "line", "color": "brown", "strokeWidth": 2}, "encoding": {"tooltip": [{"type": "quantitative", "field": "Neutral"}], "x": {"type": "quantitative", "field": "Time"}, "y": {"type": "quantitative", "field": "Neutral"}}}], "data": {"name": "data-21b1dc8c83fb9923fb64ba25fe21f8be"}, "height": 400, "title": "Probability of each emotion over time", "width": 1000, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-21b1dc8c83fb9923fb64ba25fe21f8be": [{"Time": 0, "Angry": 0.0045760362409055, "Disgust": 0.0003407848125789, "Fear": 0.0088716391474008, "Happy": 0.7534448504447937, "Sad": 0.0056185699068009, "Surprise": 0.0167799387127161, "Neutral": 0.2103681713342666}, {"Time": 1, "Angry": 0.08383609354496, "Disgust": 0.0022797500714659, "Fear": 0.0180594827979803, "Happy": 0.8218438029289246, "Sad": 0.0143654095008969, "Surprise": 0.0047768866643309, "Neutral": 0.0548386052250862}, {"Time": 2, "Angry": 0.0228393618017435, "Disgust": 1.97136478163884e-06, "Fear": 0.0014077676460146, "Happy": 0.9687453508377076, "Sad": 0.0015382763231173, "Surprise": 0.0016380380839109, "Neutral": 0.0038292466197162}, {"Time": 3, "Angry": 0.6238000392913818, "Disgust": 0.0134005770087242, "Fear": 0.2218392640352249, "Happy": 0.0172328948974609, "Sad": 0.025685915723443, "Surprise": 0.0236401297152042, "Neutral": 0.0744011625647544}, {"Time": 4, "Angry": 0.072514459490776, "Disgust": 0.0012802835553884, "Fear": 0.1677946150302887, "Happy": 0.5353147387504578, "Sad": 0.0268240943551063, "Surprise": 0.0101935900747776, "Neutral": 0.1860781162977218}, {"Time": 5, "Angry": 0.040566261857748, "Disgust": 7.823709165677428e-05, "Fear": 0.013998219743371, "Happy": 0.9139431715011596, "Sad": 0.015821473672986, "Surprise": 0.0043405196629464, "Neutral": 0.0112521070986986}, {"Time": 6, "Angry": 0.0142145054414868, "Disgust": 4.2351017327746376e-05, "Fear": 0.005875798407942, "Happy": 0.9464514255523682, "Sad": 0.0049405060708522, "Surprise": 0.0082397665828466, "Neutral": 0.0202357079833745}, {"Time": 7, "Angry": 0.0033320856746286, "Disgust": 4.686572083301144e-06, "Fear": 0.0005888173473067, "Happy": 0.9849510192871094, "Sad": 0.0004064069944433, "Surprise": 0.0034933399874716, "Neutral": 0.007223748601973}, {"Time": 8, "Angry": 0.0092359511181712, "Disgust": 7.842072227504104e-05, "Fear": 0.005712388549, "Happy": 0.9035782217979432, "Sad": 0.0040973438881337, "Surprise": 0.0049910270608961, "Neutral": 0.0723065957427024}, {"Time": 9, "Angry": 0.0014486882137134, "Disgust": 1.1621168596320786e-05, "Fear": 0.0007347764912992, "Happy": 0.8777437806129456, "Sad": 0.0006997125456109, "Surprise": 0.0015969845699146, "Neutral": 0.1177644878625869}, {"Time": 10, "Angry": 0.0055569219402968, "Disgust": 9.731429599924011e-06, "Fear": 0.0024569958914071, "Happy": 0.9599714875221252, "Sad": 0.0008727486710995, "Surprise": 0.0066877109929919, "Neutral": 0.0244443602859973}, {"Time": 11, "Angry": 0.1351065784692764, "Disgust": 0.0002401271631242, "Fear": 0.0276965796947479, "Happy": 0.801296591758728, "Sad": 0.0061733960174024, "Surprise": 0.0099100228399038, "Neutral": 0.0195767953991889}, {"Time": 12, "Angry": 0.6355935335159302, "Disgust": 0.000490320904646, "Fear": 0.182046577334404, "Happy": 0.1524234563112259, "Sad": 0.0099113220348954, "Surprise": 0.0156016005203127, "Neutral": 0.0039331382140517}, {"Time": 13, "Angry": 0.0904118791222572, "Disgust": 0.0001642922870814, "Fear": 0.0228136200457811, "Happy": 0.8560396432876587, "Sad": 0.0042351745069026, "Surprise": 0.0079831620678305, "Neutral": 0.0183522049337625}, {"Time": 14, "Angry": 0.0275712516158819, "Disgust": 0.0008564468007534, "Fear": 0.0343827083706855, "Happy": 0.1982923001050949, "Sad": 0.0460677184164524, "Surprise": 0.0140767907723784, "Neutral": 0.6787527799606323}, {"Time": 15, "Angry": 0.1451525390148162, "Disgust": 0.0006143593927845, "Fear": 0.079673059284687, "Happy": 0.0075859748758375, "Sad": 0.1276263147592544, "Surprise": 0.0362902134656906, "Neutral": 0.6030575037002563}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

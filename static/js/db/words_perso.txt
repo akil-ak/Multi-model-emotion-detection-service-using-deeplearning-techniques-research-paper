@@ -1,0 +1,4 @@
+WORDS,FREQ
+pattu,1
+mama,1
+danger,1

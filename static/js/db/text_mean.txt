@@ -1,0 +1,5 @@
+Trait,Value
+Extraversion,0.22095034059957933
+Neuroticism,0.0868191011052705
+Conscientiousness,0.19990597475493738
+Openness,0.259927307800153
